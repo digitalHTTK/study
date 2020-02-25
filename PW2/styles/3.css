@@ -1,0 +1,22 @@
+#a {
+	border: 3px solid #0000FF;
+}
+
+#b {
+	border: 3px solid #0000FF;
+	border-top: 3px solid #FF0000;
+	border-bottom: 3px solid #FF0000;
+}
+
+#c {
+	border: 3px solid #00FF00;
+	border-top: 3px solid #FF0000;
+	border-bottom: 3px solid #0000FF;
+}
+
+#d {
+	border-right: 3px solid #00FF00;
+	border-top: 3px solid #FF0000;
+	border-bottom: 3px solid #0000FF;
+	border-left: 3px solid #FF00FF;
+}
