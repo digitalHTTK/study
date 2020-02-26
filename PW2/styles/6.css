@@ -1,0 +1,15 @@
+#middle {
+	background-color: #444;
+	font-weight: bold;
+	color: white;
+}
+
+#image {
+	background-color: #f00;
+	height: 250px;
+	width: 250px;
+	float: right;
+	position: relative;
+	margin: 10px;
+	bottom: 50px;
+}

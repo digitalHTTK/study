@@ -1,11 +1,17 @@
+table {
+	border-spacing: 0;
+}
+
 #a {
 	background: #FF0000;
 	color: #FFFFFF;
+	border-width: 0px;
 }
 
 #b {
 	background: #FFA500;
 	color: #8C8272;
+	border-width: 0px;
 }
 
 #c {
