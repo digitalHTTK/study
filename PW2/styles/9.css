@@ -1,0 +1,18 @@
+#text {
+	background-color: #DFE6E1;
+	margin-left: 5%;
+	margin-top: -5px;
+	padding-left: .5%;
+	padding-right: .5%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	font-size: 14px;
+}
+
+#head {
+	padding: 1.5%;
+	padding-left: 1%;
+	background-color: #008B66;
+	font-size: 24px;
+	color: white;
+}

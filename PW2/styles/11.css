@@ -1,0 +1,60 @@
+* {
+	font-family: sans-serif;
+	font-size: 1.05em;
+	text-align: center;
+	margin:0;
+	padding:0;
+	text-decoration: none;
+}
+
+caption {
+	text-align: right;
+}
+
+table {
+	width: 80%;
+	height: 50%;
+	margin-left: 5%;
+	padding:0;
+	border-spacing: 0;
+	caption-side: bottom;
+}
+
+th {
+	color: rgb(255,255,255);
+	background-color: rgb(80,138,187);
+	padding: 2%;
+	font-weight: 600;
+	border: 1px solid #fff;
+	text-align: center;
+}
+
+td {
+	padding: 2%;
+	border: 1px solid #fff;
+}
+
+.even {
+	background-color: rgb(255,255,255);
+}
+
+.odd {
+	background-color: rgb(244,251,255);
+}
+
+#total {
+	background-color: rgb(229,245,255);
+}
+
+#total p {
+	text-align: left;
+	font-weight: bold;
+}
+
+#pink {
+	background-color: rgb(255,204,204);
+}
+
+#boldhere {
+	font-weight: bold;
+}

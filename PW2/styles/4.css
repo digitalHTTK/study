@@ -1,6 +1,10 @@
-blockquote {
-	quotes: "«" "»";
-	display: block;
+blockquote::before {
+	content: "«";
+	position: relative;
+}
+
+blockquote::after {
+	content: "»";
 }
 
 p {

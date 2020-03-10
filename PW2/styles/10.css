@@ -1,7 +1,19 @@
-#a {
-
+.container {
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	margin: 10px;
 }
 
-div:hover {
+.even {
+	background-color: black;
+}
+
+.odd {
+	background-color: blue;
+}
+
+.container:hover {
 	background-color: orange;
+	transition: 0.5s;
 }
