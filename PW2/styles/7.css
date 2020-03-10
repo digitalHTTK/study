@@ -1,0 +1,39 @@
+* {
+	font-family: serif;
+	font-size: 20px;
+}
+
+#head_lvl1 {
+	color: #0088DD;
+	font-size: 2em;
+	font-weight: bold;
+	text-shadow: 0.05em 0.05em 0.1em #999;
+}
+
+#head_lvl2 {
+	font-family: sans-serif;
+	color: #0088DD;
+	letter-spacing: 0.3em;
+	font-size: 1em;
+	font-weight: 100;
+}
+
+#head_lvl3 {
+	color: #0088DD;
+	font-size: 1.7em;
+	font-weight: 100;
+}
+
+#p:first-line {
+	font-weight: bold;
+}
+
+#foot_word {
+	float: right;
+	font-style: italic;
+}
+
+#blueword {
+	font-weight: normal;
+	color: #0088DD;
+}
