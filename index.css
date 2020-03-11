@@ -1,0 +1,26 @@
+button {
+	width: 100%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+	border: none;
+}
+
+body {
+	margin: 0px;
+}
+
+#Задание1 {
+	background-color: #6340A4;
+}
+
+#Задание2 {
+	background-color: #5C3997;
+}
+
+#Задание3 {
+	background-color: #54318A;
+}

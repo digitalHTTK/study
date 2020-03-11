@@ -1,12 +1,27 @@
-blockquote::before {
-	content: "«";
-	position: relative;
+#a::after, #a::before {
+    font-size: 40pt;
+    color: #890000;
+    width: auto;
 }
 
-blockquote::after {
-	content: "»";
+#a::before {
+    float: left;
+    content: "«";
 }
 
-p {
-	
+#a::after {
+    float: left;
+    content: "»";
+}
+
+#q {
+    float: left;
+    width: 30%;
+    margin-left: 2%;
+}
+
+#foot {
+    margin-left: 2%;
+    margin-top: 20px;
+    display: block;
 }
