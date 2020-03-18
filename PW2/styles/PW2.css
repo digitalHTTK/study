@@ -1,0 +1,58 @@
+button {
+	width: 100%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	border: none;
+	color: white;
+	font-family: 'Sen', sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#a {
+	background-color: #2A77A3; 
+}
+
+#b {
+	background-color: #298AAB;
+}
+
+#c {
+	background-color: #2C99B0;
+}
+
+#d {
+	background-color: #38B2BD;
+}
+
+#e {
+	background-color: #51C9C8;
+}
+
+#f {
+	background-color: #85DAD3;
+}
+
+#g {
+	background-color: #AFE5D5;
+}
+
+#h {
+	background-color: #CEDFD7;
+}
+
+#j {
+	background-color: #D7D2CF;
+}
+
+#k {
+	background-color: #D7BCCD;
+}
+
+#l {
+	background-color: #C996BF;
+}
+
+#m {
+	background-color: #B158A8;
+}
