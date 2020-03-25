@@ -1,0 +1,40 @@
+body {
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"MainContent MainContent Navigation"
+		"AddStuff AddStuff AddStuff"
+		"footer footer footer";
+	grid-template-rows: 50px 500px 500px 200px;
+	grid-template-columns: 50% 25% 25%;
+}
+
+#header {
+	grid-area: header;
+	background-color: #E0E0E0;
+	color: #685D61;
+}
+
+#MainContent {
+	grid-area: MainContent;
+	background-color: #1FAADB;
+	color: white;
+}
+
+#AddStuff {
+	grid-area: AddStuff;
+	background-color: #985AB1;
+	color: white;
+}
+
+#Navigation {
+	grid-area: Navigation;
+	background-color: #7BB642;
+	color: white;
+}
+
+#footer {
+	grid-area: footer;
+	background-color: #42444D;
+	color: white;
+}

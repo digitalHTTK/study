@@ -1,0 +1,48 @@
+body {
+	background: #ccffcc;
+	display: grid;
+	grid-template-areas:
+        "a a b"
+        "c d e";
+    grid-template-columns: 33% 33% 33%;
+}
+
+@media all and (max-width: 1100px) {
+    body {
+        background: #ccccff;
+        display: grid;
+        grid-template-areas:
+            "a a"
+            "b c"
+            "d e";
+        grid-template-columns: 50% 50%;
+    }
+}
+
+@media all and (max-width: 820px) {
+    body {
+        background: white;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+#a {
+	grid-area: a;
+}
+
+#b {
+	grid-area: b;
+}
+
+#c {
+	grid-area: c;
+}
+
+#d {
+	grid-area: d;
+}
+
+#e {
+	grid-area: e;
+}
