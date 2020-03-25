@@ -2,3 +2,35 @@
 	background-color: #E0E0E0;
 	color: #685D61;
 }
+
+#container {
+	display: flex;
+	flex-flow: row;
+	justify-content: flex-start;
+}
+
+#MainContent {
+	background-color: #1FAADB;
+	color: white;
+	width: 800px;
+	height: 600px;
+}
+
+#AddStuff {
+	background-color: #985AB1;
+	color: white;
+	width: 320px;
+	height: 380px;
+}
+
+#Navigation {
+	background-color: #7BB642;
+	color: white;
+	width: 480px;
+	height: 420px;
+}
+
+#footer {
+	background-color: #42444D;
+	color: white;
+}
