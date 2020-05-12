@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>123</title>
+</head>
+<body>
+		<canvas width='500' height='300' id='cn'></canvas>
+		<script>
+			var cn = document.getElementById("cn"),
+			    ctx  = cn.getContext('2d');
+
+			ctx.fillStyle = "#007FFF"; 
+			ctx.fillRect(0, 0, cn.width, cn.height);
+
+			ctx.fillStyle = "#CE1021"; 
+			ctx.beginPath();
+			ctx.moveTo(0, 300);
+			ctx.lineTo(0, 270);
+			ctx.lineTo(500, 0);
+			ctx.lineTo(500, 30);
+			ctx.fill();
+
+			ctx.fillStyle = "#ECD223"; 
+			ctx.beginPath();
+			ctx.moveTo(0, 300);
+			ctx.lineTo(15, 300);
+			ctx.lineTo(500, 40);
+			ctx.lineTo(500, 30);
+			ctx.fill();
+
+			ctx.beginPath();
+			ctx.moveTo(0, 270);
+			ctx.lineTo(0, 260);
+			ctx.lineTo(485, 0);
+			ctx.lineTo(500, 0);
+			ctx.fill();
+
+			ctx.beginPath();
+			ctx.moveTo(100, 30);
+			ctx.lineTo(118, 64);
+			ctx.lineTo(170, 64);
+			ctx.lineTo(135, 90);
+			ctx.lineTo(140, 138);
+			ctx.lineTo(100, 112);
+			ctx.lineTo(60, 138);
+			ctx.lineTo(75, 90);
+			ctx.lineTo(30, 64);
+			ctx.lineTo(82, 64);
+			ctx.fill();
+		</script>
+</body>
+</html>

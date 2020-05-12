@@ -1,0 +1,22 @@
+button {
+	width: 100%;
+	padding-top: 15%;
+	padding-bottom: 15%;
+	border: none;
+	color: white;
+	font-family: 'Sen', sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+body {
+	margin: 0px;
+}
+
+#a {
+	background-color: #2A77A3; 
+}
+
+#b {
+	background-color: #298AAB;
+}
