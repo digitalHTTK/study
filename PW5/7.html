@@ -1,52 +1,75 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>123</title>
-</head>
-<body>
-		<canvas width='500' height='300' id='cn'></canvas>
-		<script>
-			var cn = document.getElementById("cn"),
-			    ctx  = cn.getContext('2d');
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-			ctx.fillStyle = "#007FFF"; 
-			ctx.fillRect(0, 0, cn.width, cn.height);
+    <title>Hello, world!</title>
+  </head>
+  <body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				<div class="card">
+					<div class="card-body">Стандартная панель</div>
+				</div>
+			</div>
+		</div>
 
-			ctx.fillStyle = "#CE1021"; 
-			ctx.beginPath();
-			ctx.moveTo(0, 300);
-			ctx.lineTo(0, 270);
-			ctx.lineTo(500, 0);
-			ctx.lineTo(500, 30);
-			ctx.fill();
+		<div class="row mt-4">
+			<div class="col">
+				<div class="card">
+					<div class="card-header ">Панель с простым заголовком</div>
+					<div class="card-body">Содержимое панели</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card">
+					<h3 class="card-header font-weight-normal">Заголовок с панели из тега H3</h3>
+					<div class="card-body">Содержимое панели</div>
+				</div>
+			</div>
+		</div>
 
-			ctx.fillStyle = "#ECD223"; 
-			ctx.beginPath();
-			ctx.moveTo(0, 300);
-			ctx.lineTo(15, 300);
-			ctx.lineTo(500, 40);
-			ctx.lineTo(500, 30);
-			ctx.fill();
+		<div class="row mt-4">
+			<div class="col">
+				<div class="card bg-primary">
+					<div class="card-header text-light ">panel-primary</div>
+					<div class="card-body bg-light">panel-primary</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card border-warning">
+					<div class="card-header alert-warning">panel-warning</div>
+					<div class="card-body bg-light">panel-warning</div>
+				</div>
+			</div>
+		</div>
 
-			ctx.beginPath();
-			ctx.moveTo(0, 270);
-			ctx.lineTo(0, 260);
-			ctx.lineTo(485, 0);
-			ctx.lineTo(500, 0);
-			ctx.fill();
+		<div class="row mt-4">
+			<div class="col">
+				<div class="card border-success">
+					<div class="card-header alert-success">panel-success</div>
+					<div class="card-body bg-light">panel-success</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="card border-danger">
+					<div class="card-header alert-danger">panel-danger</div>
+					<div class="card-body bg-light">panel-danger</div>
+				</div>
+			</div>
+		</div>
 
-			ctx.beginPath();
-			ctx.moveTo(100, 30);
-			ctx.lineTo(118, 64);
-			ctx.lineTo(170, 64);
-			ctx.lineTo(135, 90);
-			ctx.lineTo(140, 138);
-			ctx.lineTo(100, 112);
-			ctx.lineTo(60, 138);
-			ctx.lineTo(75, 90);
-			ctx.lineTo(30, 64);
-			ctx.lineTo(82, 64);
-			ctx.fill();
-		</script>
-</body>
+		<div class="row mt-4">
+			<div class="col">
+				<div class="card border-info">
+					<div class="card-header alert-info">panel-info</div>
+					<div class="card-body bg-light">panel-info</div>
+				</div>
+			</div>
+		</div>
+	</div>   	
+  </body>
 </html>

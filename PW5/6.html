@@ -1,52 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>123</title>
-</head>
-<body>
-		<canvas width='500' height='300' id='cn'></canvas>
-		<script>
-			var cn = document.getElementById("cn"),
-			    ctx  = cn.getContext('2d');
-
-			ctx.fillStyle = "#007FFF"; 
-			ctx.fillRect(0, 0, cn.width, cn.height);
-
-			ctx.fillStyle = "#CE1021"; 
-			ctx.beginPath();
-			ctx.moveTo(0, 300);
-			ctx.lineTo(0, 270);
-			ctx.lineTo(500, 0);
-			ctx.lineTo(500, 30);
-			ctx.fill();
-
-			ctx.fillStyle = "#ECD223"; 
-			ctx.beginPath();
-			ctx.moveTo(0, 300);
-			ctx.lineTo(15, 300);
-			ctx.lineTo(500, 40);
-			ctx.lineTo(500, 30);
-			ctx.fill();
-
-			ctx.beginPath();
-			ctx.moveTo(0, 270);
-			ctx.lineTo(0, 260);
-			ctx.lineTo(485, 0);
-			ctx.lineTo(500, 0);
-			ctx.fill();
-
-			ctx.beginPath();
-			ctx.moveTo(100, 30);
-			ctx.lineTo(118, 64);
-			ctx.lineTo(170, 64);
-			ctx.lineTo(135, 90);
-			ctx.lineTo(140, 138);
-			ctx.lineTo(100, 112);
-			ctx.lineTo(60, 138);
-			ctx.lineTo(75, 90);
-			ctx.lineTo(30, 64);
-			ctx.lineTo(82, 64);
-			ctx.fill();
-		</script>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <style type="text/css">
+    	.row > div {
+    		margin-top: 1%;
+    		margin-bottom: 1%;
+    		margin-left: 5%;
+    		margin-right: 5%;
+    	}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col alert alert-success font-weight-light">
+                <strong>Успех</strong>
+            </div>
+            <div class="col alert alert-info font-weight-light">
+                <strong>Информация</strong>
+            </div>
+            <div class="col alert alert-warning font-weight-light">
+                <strong>Предупреждение</strong>
+            </div>
+            <div class="col alert alert-danger font-weight-light">
+                <strong>Опасность</strong>
+            </div>
+        </div>
+        <div class="progress" style="height: 30px">
+            <div class="progress-bar" style="width: 42%; height: 30px">
+                Завершено на 42%
+            </div>
+        </div>
+        <br/>
+        <div class="progress" style="height: 30px">
+            <div class="progress-bar progress-bar-striped bg-success" style="width: 30%; height: 30px"></div>
+            <div class="progress-bar bg-warning" style="width: 25%; height: 30px"></div>
+            <div class="progress-bar bg-danger" style="width: 10%; height: 30px"></div>
+        </div>
+    </div>
+  </body>
 </html>

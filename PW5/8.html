@@ -1,52 +1,76 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>123</title>
-</head>
-<body>
-		<canvas width='500' height='300' id='cn'></canvas>
-		<script>
-			var cn = document.getElementById("cn"),
-			    ctx  = cn.getContext('2d');
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </head>
+  <body class="container-fluid">
+	<h1>Your informatiom</h1>
+	<form class="needs-validation">
 
-			ctx.fillStyle = "#007FFF"; 
-			ctx.fillRect(0, 0, cn.width, cn.height);
+		<fieldset class="form-group">
+			<legend>Basic information</legend>
+			<div class="form-group">
+				<label for="лицевой">Personal account number</label>
+				<input id="лицевой" type="text" maxlength="16" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="категория">Category of deposit</label>
+				<select id="категория" class="form-control">
+					<option selected="selected">For yourself</option>
+					<option>Quick deposit</option>
+					<option>Deposit for friend</option>
+				</select>
+			</div>
+		</fieldset>
 
-			ctx.fillStyle = "#CE1021"; 
-			ctx.beginPath();
-			ctx.moveTo(0, 300);
-			ctx.lineTo(0, 270);
-			ctx.lineTo(500, 0);
-			ctx.lineTo(500, 30);
-			ctx.fill();
+		<fieldset class="form-group">
+			<legend>Pasport data</legend>
+			<div class="row">
+				<div class="col">
+					<label for="серия_паспорта">Pasport series</label>
+					<input id="серия_паспорта" type="number" max="9999" class="form-control">
+				</div>
 
-			ctx.fillStyle = "#ECD223"; 
-			ctx.beginPath();
-			ctx.moveTo(0, 300);
-			ctx.lineTo(15, 300);
-			ctx.lineTo(500, 40);
-			ctx.lineTo(500, 30);
-			ctx.fill();
+				<div class="col">
+					<label for="номер_паспорта">Pasport number</label>
+					<input id="номер_паспорта" type="number" max="999999" class="form-control">
+				</div>
+			</div>
 
-			ctx.beginPath();
-			ctx.moveTo(0, 270);
-			ctx.lineTo(0, 260);
-			ctx.lineTo(485, 0);
-			ctx.lineTo(500, 0);
-			ctx.fill();
+			<div class="row">
+				<div class="col">
+					<label for="дата_выдачи">Issue date</label>
+					<input id="дата_выдачи" type="date" class="form-control">
+				</div>		
 
-			ctx.beginPath();
-			ctx.moveTo(100, 30);
-			ctx.lineTo(118, 64);
-			ctx.lineTo(170, 64);
-			ctx.lineTo(135, 90);
-			ctx.lineTo(140, 138);
-			ctx.lineTo(100, 112);
-			ctx.lineTo(60, 138);
-			ctx.lineTo(75, 90);
-			ctx.lineTo(30, 64);
-			ctx.lineTo(82, 64);
-			ctx.fill();
-		</script>
-</body>
+				<div class="col">	
+					<label for="место_выдачи">Issue place</label>
+					<input id="место_выдачи" type="text" class="form-control">
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset class="form-group">
+			<legend>Deposit state</legend>
+			<div class="form-group">
+				<label for="деньги">Current deposit amount</label>
+				<input id="деньги" type="number" max="99999999999" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="дата">Date of last operation</label>
+				<input id="дата" type="date" class="form-control">
+			</div>
+		</fieldset>
+
+		<button type="submit" class="btn btn-primary mb-2">Подтвердить</button>
+		<button type="reset" class="btn btn-primary mb-2">Сбросить</button>
+	</form>
+  </body>
 </html>

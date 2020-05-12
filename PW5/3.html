@@ -1,52 +1,44 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>123</title>
-</head>
-<body>
-		<canvas width='500' height='300' id='cn'></canvas>
-		<script>
-			var cn = document.getElementById("cn"),
-			    ctx  = cn.getContext('2d');
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-			ctx.fillStyle = "#007FFF"; 
-			ctx.fillRect(0, 0, cn.width, cn.height);
-
-			ctx.fillStyle = "#CE1021"; 
-			ctx.beginPath();
-			ctx.moveTo(0, 300);
-			ctx.lineTo(0, 270);
-			ctx.lineTo(500, 0);
-			ctx.lineTo(500, 30);
-			ctx.fill();
-
-			ctx.fillStyle = "#ECD223"; 
-			ctx.beginPath();
-			ctx.moveTo(0, 300);
-			ctx.lineTo(15, 300);
-			ctx.lineTo(500, 40);
-			ctx.lineTo(500, 30);
-			ctx.fill();
-
-			ctx.beginPath();
-			ctx.moveTo(0, 270);
-			ctx.lineTo(0, 260);
-			ctx.lineTo(485, 0);
-			ctx.lineTo(500, 0);
-			ctx.fill();
-
-			ctx.beginPath();
-			ctx.moveTo(100, 30);
-			ctx.lineTo(118, 64);
-			ctx.lineTo(170, 64);
-			ctx.lineTo(135, 90);
-			ctx.lineTo(140, 138);
-			ctx.lineTo(100, 112);
-			ctx.lineTo(60, 138);
-			ctx.lineTo(75, 90);
-			ctx.lineTo(30, 64);
-			ctx.lineTo(82, 64);
-			ctx.fill();
-		</script>
-</body>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+	<div>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Класс</th>
+                    <th>Описание</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="alert alert-primary text-dark">
+                    <td>Класс 1</td>
+                    <td>Показывает нейтральное информативное изменение</td>
+                </tr>
+                <tr>
+                    <td>Класс 2</td>
+                    <td>Изменяет цвет строки или ячейки при наведении</td>
+                </tr>
+                <tr class="alert alert-danger text-dark">
+                    <td>Класс 3</td>
+                    <td>Показывает опасное или потенциальное негативное действие</td>
+                </tr>
+                <tr class="alert alert-warning text-dark">
+                    <td>Класс 4</td>
+                    <td>Показывает предупреждение</td>
+                </tr>
+                <tr class="alert alert-success text-dark">
+                    <td>Класс 5</td>
+                    <td>Показывает успешное или позитивное действие</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </body>
 </html>
