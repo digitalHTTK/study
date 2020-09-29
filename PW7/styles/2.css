@@ -1,0 +1,16 @@
+* {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.item > h1:hover {
+    cursor: pointer;
+    user-select: none;
+}
+
+.item > p {
+    user-select: none;
+}
+
+.invisible-item {
+    display: none;
+}

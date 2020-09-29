@@ -1,0 +1,24 @@
+.menu {
+    padding: 20px;
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: blueviolet;
+    text-decoration-color: white;
+    transition: left .3s;
+    left: -300px;
+}
+
+.menu-open {
+    left: 0;
+}
+
+.main {
+    padding: 20px;
+    transition: margin-left .3s;
+    margin-left: 0px;
+}
+
+.main-open {
+    margin-left: 300px;
+}

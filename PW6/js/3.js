@@ -13,6 +13,7 @@ function func(loc) {
 
     switch (command) {
         case 1:
+            if (loc === 3) loc = 0;
             loc++;
             break;
     

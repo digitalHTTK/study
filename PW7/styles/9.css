@@ -1,0 +1,26 @@
+.small-image {
+    width: 300px;
+}
+
+.big-image {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.big-image > img{
+    width: 70%;
+    position: fixed;
+    top: 0;
+}
+
+.big-image > .background {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0 ,0, .5);
+}
+
+.show {
+    display: block;
+}

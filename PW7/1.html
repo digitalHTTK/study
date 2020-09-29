@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>1</title>
+</head>
+<body>
+	<h1>Your informatiom</h1>
+	<form class="personal-info" name="personal-info">
+		
+		<label for="account-number">Personal account number</label>
+		<input id="account-number" type="text" maxlength="16" required="required" name="account-number"><br>
+
+		<label for="category">Category of deposit</label>
+		<select id="category" required="required" name="category">
+			<option selected="selected">For yourself</option>
+			<option>Quick deposit</option>
+			<option>Deposit for friend</option>
+		</select><br>
+
+		<fieldset>
+			<h2>Pasport data</h2>
+			<label for="series">Pasport series</label>
+			<input id="series" type="number" max="9999" required="required" name="series">
+
+			<label for="number">Pasport number</label>
+			<input id="number" type="number" max="999999" required="required" name="number"><br>
+
+			<label for="issue-place">Issue place</label>
+			<input id="issue-place" type="text" required="required" name="issue-place">
+
+			<label for="phone-number">Phone number</label>
+			<input id="phone-number" type="tel" required="required" name="phone-number"><br>
+		</fieldset>
+
+		<label for="current-amount">Current deposit amount</label>
+		<input id="current-amount" type="number" max="9999999999999" name="current-amount"><br>
+
+		<label for="submit">Confirm?</label>
+		<input id="submit" type="submit" value="yes">
+		<input id="reset" type="reset" value="reset"><br>
+		<button class="info">show data</button>
+	</form>
+	<div class="form-data-container"></div>
+	<script src="js/1.js"></script>
+</body>
+</html>
